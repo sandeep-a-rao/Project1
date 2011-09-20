@@ -1,0 +1,97 @@
+.container {
+  width: 1024px;
+}
+
+body {
+  background: #fff;
+}
+
+header {
+  background: #0066cc;
+  height: 100px;
+
+}
+
+section {
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: #fff;
+}
+
+
+section h1 {
+  font-size: 200%;
+}
+
+.field {
+        float: right;
+        padding: 10px;
+}
+
+.text_line
+{
+        clear:both;
+}
+
+/* Links */
+
+a {
+  color: #09c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: blink;
+}
+
+a:visited {
+  color: #069;
+}
+
+/* Sign up button */
+
+a.signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 75px;
+  text-align: center;
+  color: #0066cc;
+  background: #345;
+  font-size: 100%;
+  font-weight: bold;
+  padding: 5px;
+}
+/* Navigation */
+
+nav {
+  float: right;
+  padding: 10px;
+}
+
+nav {
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav a {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    20px;
+  -webkit-border-radius: 20px;
+  border-radius:         20px;
+}
