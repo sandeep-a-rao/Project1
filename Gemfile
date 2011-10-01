@@ -29,6 +29,7 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 group :development do
   gem 'rspec-rails', '2.6.1'
+  gem 'faker', '0.3.1'
 
 end
 

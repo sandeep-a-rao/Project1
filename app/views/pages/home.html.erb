@@ -4,8 +4,8 @@
       <td class="main">
         <h1 class="micropost">What's up?</h1>
         <%= render 'shared/micropost_form' %>
-         <%= render 'shared/feed' %>
-      </td>
+
+        </td>
       <td class="sidebar round">
         <%= render 'shared/user_info' %>
       </td>
@@ -22,3 +22,5 @@
 
 <%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
  <% end %>
+
+  <%= render :partial => 'shared/feed_item', :collection => @feed_items %>

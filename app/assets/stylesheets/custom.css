@@ -202,11 +202,6 @@ table.microposts tr {
   height: 70px;
 }
 
-table.microposts tr td.gravatar {
-  border-top: 1px solid #ccc;
-  vertical-align: top;
-  width: 50px;
-}
 
 table.microposts tr td.micropost {
   border-top: 1px solid #ccc;
