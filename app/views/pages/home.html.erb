@@ -2,8 +2,9 @@
   <table class="front" summary="For signed-in users">
     <tr>
       <td class="main">
-        <h1 class="micropost">What's up?</h1>
+        <h1 class="micropost">Post your Message here!</h1>
         <%= render 'shared/micropost_form' %>
+
 
         </td>
       <td class="sidebar round">
@@ -17,10 +18,10 @@
   <p>
     This is the home page for the
     <a href="http://localhost:3000/">Project 1</a>
-
+    <%= render :partial => 'shared/feed_item', :collection => @feed_items %>
   </p>
 
 <%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
  <% end %>
 
-  <%= render :partial => 'shared/feed_item', :collection => @feed_items %>
+

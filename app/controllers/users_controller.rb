@@ -6,7 +6,8 @@ class UsersController < ApplicationController
 
 def home
 	#home page of a user
-	redirect_to :controller=>'post', :action=>'list_posts'
+	#redirect_to :controller=>'post', :action=>'list_posts'
+  render 'pages/home'
 	return
 end
 

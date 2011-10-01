@@ -3,7 +3,8 @@
 <head>
   <title><%= title %></title>
    <%= csrf_meta_tags %>
-
+   <%= render 'layouts/header' %>
+   <%= javascript_include_tag :defaults %>
 
 
   <!--[if lt IE 9]>
@@ -18,19 +19,15 @@
 <body>
       <div class="container">
        <header>
-            <%= image_tag("chatting.jpg", :alt => "Project1", :class => "round", :size => "100x100") %>
-             </header>
+       <%= image_tag("chatting.jpg", :alt => "Project1", :class => "round", :size => "100x100") %>
+       </header>
       <section class="round">
+         <% flash.each do |key, value| %>
+          <div class="flash <%= key %>"><%= value %></div>
+        <% end %>
        <%= yield %>
       </section>
 
-      <%= render 'layouts/header' %>
-      <section class="round">
-        <% flash.each do |key, value| %>
-          <div class="flash <%= key %>"><%= value %></div>
-        <% end %>
-        <%= yield %>
-      </section>
 
 
       </div>
