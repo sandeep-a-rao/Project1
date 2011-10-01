@@ -1,8 +1,8 @@
 class AddSaltToUsers < ActiveRecord::Migration
-  def change
+  def self.up
     add_column :users, :salt, :string
   end
-  def del
+  def self.down
     remove_column :users, :salt
   end
 end

@@ -1,16 +1,23 @@
 .container {
-  width: 1024px;
+  width: 710px;
 }
 
 body {
-  background: #fff;
+  background: #cff;
 }
 
 header {
+  padding-top: 20px;
   background: #0066cc;
   height: 100px;
 
 }
+
+header img {
+  padding: 1em;
+  background: #fff;
+}
+
 
 section {
   margin-top: 1em;
@@ -66,9 +73,8 @@ a.signup_button {
 }
 /* Navigation */
 
-nav {
-  float: left;
-  padding: 10px;
+ nav {
+  float: right;
 }
 
 nav {
@@ -77,15 +83,28 @@ nav {
   white-space: nowrap;
 }
 
-nav a {
+nav ul {
   margin: 0;
   padding: 0;
 }
 
-nav a {
+nav ul li {
   list-style-type: none;
   display: inline-block;
   padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Round corners */
@@ -95,6 +114,28 @@ nav a {
   -webkit-border-radius: 20px;
   border-radius:         20px;
 }
+
+
+/* User show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+}
+
+
 
 div.field, div.actions {
   margin-bottom: 10px;
@@ -147,4 +188,59 @@ div.field, div.actions {
 
 .users li {
   list-style: none;
+}
+
+ h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  margin-top: 1em;
+}
+
+table.microposts tr {
+  height: 70px;
+}
+
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.microposts tr td.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.microposts {
+  font-size: 80%;
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
 }

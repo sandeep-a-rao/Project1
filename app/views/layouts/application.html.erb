@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project1</title>
+  <title><%= title %></title>
    <%= csrf_meta_tags %>
+
+
+
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -14,9 +17,9 @@
 </head>
 <body>
       <div class="container">
-                  <header>
-                  <%= image_tag("chatting.jpg", :alt => "Project1", :class => "round", :size => "100x100") %>
-                  </header>
+       <header>
+            <%= image_tag("chatting.jpg", :alt => "Project1", :class => "round", :size => "100x100") %>
+             </header>
       <section class="round">
        <%= yield %>
       </section>
@@ -28,7 +31,9 @@
         <% end %>
         <%= yield %>
       </section>
-    </div>
+
+
+      </div>
 
 
 </body>
