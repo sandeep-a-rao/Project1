@@ -1,4 +1,4 @@
-<% unless @feed_items.empty? %>
+ <% unless @feed_items.empty? %>
   <table class="microposts" summary="User microposts">
     <%= render :partial => 'shared/feed_item', :collection => @feed_items %>
   </table>
@@ -6,12 +6,13 @@
 <% end %>
 
 <tr>
-
-  <td class="micropost">
+    <td class="micropost">
     <span class="user">
       <%= link_to feed_item.user.name, feed_item.user %>
     </span>
+
     <span class="content"><%= feed_item.content %></span>
+
     <span class="timestamp">
       Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
     </span>
@@ -24,3 +25,10 @@
   </td>
   <% end %>
 </tr>
+
+
+
+
+
+
+

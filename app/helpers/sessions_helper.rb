@@ -10,18 +10,18 @@ module SessionsHelper
   end
 
   def current_user
-     @current_user ||= user_from_remember_token
+    @current_user ||= user_from_remember_token
     #@current_user     # Useless! Don't use this line.
   end
 
 
   def current_user?(user)
-    @current_user ||= user_from_remember_token
+    #@current_user ||= user_from_remember_token
     user == current_user
   end
 
   def signed_in?
-     !current_user.nil?
+     !self.current_user.nil?
   end
 
   def sign_out
